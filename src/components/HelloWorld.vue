@@ -1,20 +1,24 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+<div class = "wrapper">
+<div class = "card">
+<div class = "header">
+
+  <h1>Welcome to my card</h1>
   </div>
-  <div class="card">
-    <img alt="real estate logo" src="./housepic.jpg">
-    <div class="card-content"> 
-      <h2>Two Pod Realty</h2> 
-      <p id="description">Real Estate Company Focused on delivering the best properties in the State College Area</p> 
-      <button class="details-button" id="detailsBtn">Details</button>
-    </div> 
-  </div> 
-  
-  <button id="btn">Duplicator</button>
-  <button id="colorBtn">BGColorChanger</button>
-  <button id="Headingbtn">HeadingChanger</button>
-  <button id="dltbtn">DeleteCard</button>
+
+  <img src="https://cdn.creatureandcoagency.com/uploads/2021/03/FrogLifecycle_Body_8.png">
+ 
+  <div class = "paragraph">
+  <p>This is a picture of a frog that I fond on the internet. It looks really cool and I thought it would be nice to share.</p>
+  </div>
+
+<div class="btn-wrapper">
+ <a href="https://hax.psu.edu">
+   <button>Details</button> </a> </div>
+  </div>
+  </div>
+
+
 </template>
 
 <script>
@@ -80,64 +84,60 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.color {
+  background-color: red;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+body {
+  background-color: lightgreen;
+  
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.card { 
+  border-style: solid;
+  border-width: 3px;
+  border-color: green;
+  border-radius: 10px;
+  width: 450px;
 }
-a {
-  color: #42b983;
-}
-.card {
-  max-width: 400px;
-  margin: 0 auto;
-  border: 1px solid #0C0B0B;
-  background-color: #0C0B0B;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.card img {
-  max-width: 100%;
+img {
+  margin: 25px;
+  width: 400px;
   height: auto;
 }
-
-.card-content {
-  flex: 1;
+.btn-wrapper {
+  margin: 24px;
 }
-
-/* Style for the Title label */
-h2 {
+.btn-wrapper button {
   font-size: 24px;
-  margin: -10px 0;
-  /* Background color and border */
-  background-color: #F8471B;
-  /* Background color */
-  color: #fff;
-  /* Text color on the background */
-  padding: 8px 16px;
-  border-radius: 4px;
+  color: green;
+  background-color: white;
+}
+.btn-wrapper button:hover {
+  color: white;
+  background-color: green;
+}
+.header {
+  font-size: 20px;
+  margin: 25px;
+}
+.paragraph {
+  font-size: 20px;
+  margin: 25px;
+}
+@media screen and (max-width: 800px) {  
+  div.Frog {
+    display: none;
+  }
+  div.header{
+    display: none;
+  }
+  div.paragraph{
+    display: none;
+  }
+
+}
+div, span {
+  display: inline-block;
 }
 
-p {
-  font-size: 16px;
-  margin: 8px 0;
-  color: #fff;
-}
 
-a.details-button {
-  background-color: #EA5F0A;
-  color: #fff;
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 4px;
-}
 </style>
